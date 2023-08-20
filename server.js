@@ -8,18 +8,18 @@ const cors = require('cors');
 app.use(cors());
 
 const pool = mysql.createPool({
-  host: 'MYSQLHOST',
-  user: 'MYSQLUSER',
-  port: 'MYSQLPORT',
-  password: 'MYSQLPASSWORD',
-  database: 'MYSQLDATABASE',
+  host: 'containers-us-west-202.railway.app',
+  user: 'root',
+  port: '7912',
+  password: 'doHuGoKwWQm3BwYjADwF',
+  database: 'railway',
 });
 const connection = mysql.createConnection({
-  host: 'MYSQLHOST',
-  port: 'MYSQLPORT',
-  user: 'MYSQLUSER',
-  password: 'MYSQLPASSWORD',
-  database: 'MYSQLDATABASE'
+  host: 'containers-us-west-202.railway.app',
+  port: '7912',
+  user: 'root',
+  password: 'doHuGoKwWQm3BwYjADwF',
+  database: 'railway'
 });
 connection.connect();
 // Route handler for the "add" endpoint
