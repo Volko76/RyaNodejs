@@ -92,7 +92,7 @@ app.delete('/delete/:id', (req, res) => {
 
 
 const port = 3001; // Replace with your desired port number
-const test = ${{TEST}};
+const test = process.env.TEST;
 app.listen(port, () => {
   console.log(`Server is running on port ${port}`);
   console.log(`test :  ${test}`);
