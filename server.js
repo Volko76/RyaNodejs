@@ -6,7 +6,9 @@ const app = express();
 app.use(express.json());
 const cors = require('cors');
 
-app.use(cors());
+app.use(cors({
+    origin: 'https://create-react-app-site-production-f182.up.railway.app'
+}));
 
 const pool = mysql.createPool({
   host: process.env.MYSQLHOST,
